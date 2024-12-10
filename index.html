@@ -9,7 +9,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
     <style>
-        /* Body style */
+        /* Body Style */
         body {
             margin: 0;
             font-family: 'Open Sans', sans-serif;
@@ -17,11 +17,10 @@
             color: black;
         }
 
-        /* Header section */
+        /* Header Section */
         .header {
             display: flex;
-            justify-content: top;
-            align-items: top;
+            align-items: center; /* Vertically center */
             padding: 20px;
             background-color: white;
             color: black;
@@ -34,7 +33,9 @@
         }
 
         .header .text {
-            text-align: left;
+            text-align: left; /* Align text to the left */
+            flex-grow: 1; /* Fill the remaining space */
+            max-width: calc(100% - 120px); /* Prevent overflow by calculating width (100% - icon space) */
         }
 
         .header h1 {
@@ -44,7 +45,7 @@
 
         .header p {
             font-size: 20px;
-            margin: 10px 0;
+            margin: 5px 0;
         }
 
         /* Page View Section */
@@ -53,7 +54,7 @@
             justify-content: space-around;
             align-items: top;
             padding: 20px;
-            margin-top: 0px; /* Add space on top */
+            margin-top: 0px;
         }
 
         .page-view img {
@@ -64,7 +65,7 @@
         /* Download Section */
         .download-section {
             display: flex;
-            justify-content: center; /* Center the download section */
+            justify-content: center;
             align-items: center;
             padding: 20px;
             margin-top: 0px;
@@ -72,7 +73,7 @@
 
         .download-section h2 {
             font-size: 24px;
-            margin-right: 20px; /* Add space between text and image */
+            margin-right: 20px;
             color: green;
         }
 
@@ -81,7 +82,7 @@
             height: auto;
         }
 
-        /* Footer */
+        /* Footer Section */
         .footer-section {
             text-align: center;
             margin-top: 0px;
