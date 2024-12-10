@@ -20,7 +20,8 @@
         /* Header section */
         .header {
             display: flex;
-            align-items: center; /* Align icon and text vertically */
+            justify-content: top;
+            align-items: top;
             padding: 20px;
             background-color: white;
             color: black;
@@ -37,7 +38,7 @@
         }
 
         .header h1 {
-            font-size: 48px;
+            font-size: 30px;
             margin: 0;
         }
 
@@ -49,31 +50,29 @@
         /* Page View Section */
         .page-view {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column; /* Arrange items vertically */
+            justify-content: space-around;
+            align-items: top;
             padding: 20px;
-            margin-top: 40px;
+            margin-top: 0px; /* Add space on top */
         }
 
         .page-view img {
             width: 200px;
             height: auto;
-            margin-bottom: 10px; /* Add margin between the images */
         }
 
         /* Download Section */
         .download-section {
             display: flex;
-            justify-content: center;
+            justify-content: center; /* Center the download section */
             align-items: center;
             padding: 20px;
-            margin-top: 40px;
+            margin-top: 0px;
         }
 
         .download-section h2 {
             font-size: 24px;
-            margin-right: 20px;
+            margin-right: 20px; /* Add space between text and image */
             color: green;
         }
 
@@ -85,8 +84,8 @@
         /* Footer */
         .footer-section {
             text-align: center;
-            margin-top: 50px;
-            padding: 20px 10px;
+            margin-top: 0px;
+            padding: 10px 10px;
             background-color: #f8f9fa;
             color: #6c757d;
         }
@@ -105,13 +104,8 @@
 
     <!-- Page View Section -->
     <div class="page-view">
-        <!-- First iPhone Image with App Name -->
         <img src="images/iphone.png" alt="KSO VPN App Left">
-        <h1>KSO VPN</h1>
-        
-        <!-- Second iPhone Image with App Name -->
         <img src="images/iphone.png" alt="KSO VPN App Right">
-        <h1>KSO VPN</h1>
     </div>
 
     <!-- Download Section -->
