@@ -9,7 +9,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
     <style>
-        /* Body Style */
+        /* General Body Style */
         body {
             margin: 0;
             font-family: 'Open Sans', sans-serif;
@@ -20,9 +20,7 @@
         /* Header Section */
         .header {
             display: flex;
-             width: 200px;
-            height: 50px;
-            align-items: top; /* Vertically center */
+            align-items: center; /* Align items vertically */
             padding: 20px;
             background-color: white;
             color: black;
@@ -31,13 +29,12 @@
         .header img.icon {
             width: 100px;
             height: 100px;
-            margin-right: 20px; /* Space between icon and text */
+            margin-right: 20px; /* Add space between icon and text */
         }
 
         .header .text {
-            text-align: left; /* Align text to the left */
-            flex-grow: 1; /* Fill the remaining space */
-            max-width: calc(100% - 120px); /* Prevent overflow by calculating width (100% - icon space) */
+            flex-grow: 1; /* Allow text to take available space */
+            text-align: left;
         }
 
         .header h1 {
@@ -47,16 +44,15 @@
 
         .header p {
             font-size: 20px;
-            margin: 5px 0;
+            margin: 10px 0;
         }
 
         /* Page View Section */
         .page-view {
             display: flex;
-            justify-content: space-around;
-            align-items: top;
+            justify-content: space-around; /* Equal space between images */
+            align-items: center;
             padding: 20px;
-            margin-top: 0px;
         }
 
         .page-view img {
@@ -70,12 +66,12 @@
             justify-content: center;
             align-items: center;
             padding: 20px;
-            margin-top: 0px;
+            margin-top: 20px;
         }
 
         .download-section h2 {
             font-size: 24px;
-            margin-right: 20px;
+            margin-right: 20px; /* Add space between text and image */
             color: green;
         }
 
@@ -87,8 +83,7 @@
         /* Footer Section */
         .footer-section {
             text-align: center;
-            margin-top: 0px;
-            padding: 10px 10px;
+            padding: 10px;
             background-color: #f8f9fa;
             color: #6c757d;
         }
