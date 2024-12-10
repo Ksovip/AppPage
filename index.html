@@ -13,23 +13,16 @@
         body {
             margin: 0;
             font-family: 'Open Sans', sans-serif;
-            background-color: white; /* Background အဖြူ */
-            color: black; /* စာသားအနက် */
+            background-color: white;
+            color: black;
         }
 
         /* Header section */
         .header {
             text-align: center;
             padding: 20px 20px;
-            background-color: white; /* Background အဖြူ */
-            color: black; /* စာသားအနက် */
-        }
-
-        .header img {
-            width: 250px; /* ပုံအရွယ်အစား */
-            height: auto;
-            margin-bottom: 20px;
-            margin-top: 0; /* ပုံကို အပေါ်ဘက် ထားသည် */
+            background-color: white;
+            color: black;
         }
 
         .header h1 {
@@ -42,16 +35,32 @@
             margin: 10px 0 20px;
         }
 
-        /* Download buttons */
+        /* Page View Section */
+        .page-view {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .page-view img {
+            width: 200px; /* အရွယ်အစား */
+            height: auto;
+        }
+
+        /* Download Buttons */
         .button {
-            text-align: center;
+            display: flex;
+            justify-content: flex-end; /* Right alignment */
+            align-items: center;
             margin-top: 20px;
+            padding-right: 20px; /* Space from right edge */
         }
 
         .button h2 {
             font-size: 24px;
             margin-bottom: 20px;
-            color: green; /* Download Now! စာလုံးအစိမ်း */
+            color: green;
         }
 
         .button a img {
@@ -75,8 +84,12 @@
     <div class="header">
         <h1>KSO VPN</h1>
         <p>Vip Vpn App</p>
-        <!-- iPhone image -->
-        <img src="images/iphone.png" alt="KSO VPN App">
+    </div>
+
+    <!-- Page View Section -->
+    <div class="page-view">
+        <img src="images/iphone.png" alt="KSO VPN App Left">
+        <img src="images/iphone.png" alt="KSO VPN App Right">
     </div>
 
     <!-- Download Buttons -->
