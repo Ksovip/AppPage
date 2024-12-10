@@ -20,8 +20,7 @@
         /* Header section */
         .header {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            align-items: center; /* Align icon and text vertically */
             padding: 20px;
             background-color: white;
             color: black;
@@ -38,7 +37,7 @@
         }
 
         .header h1 {
-            font-size: 24px;
+            font-size: 48px;
             margin: 0;
         }
 
@@ -50,29 +49,30 @@
         /* Page View Section */
         .page-view {
             display: flex;
-            justify-content: space-around;
-            align-items: top;
-            padding: 10px;
-            margin-top: 0px; /* Add space on top */
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin-top: 40px;
         }
 
         .page-view img {
             width: 200px;
             height: auto;
+            margin: 0 15px; /* Add margin between the images */
         }
 
         /* Download Section */
         .download-section {
             display: flex;
-            justify-content: center; /* Center the download section */
+            justify-content: center;
             align-items: center;
-            padding: 10px;
-            margin-top: 0px;
+            padding: 20px;
+            margin-top: 40px;
         }
 
         .download-section h2 {
             font-size: 24px;
-            margin-right: 20px; /* Add space between text and image */
+            margin-right: 20px;
             color: green;
         }
 
@@ -84,8 +84,8 @@
         /* Footer */
         .footer-section {
             text-align: center;
-            margin-top: 0px;
-            padding: 10px 10px;
+            margin-top: 50px;
+            padding: 20px 10px;
             background-color: #f8f9fa;
             color: #6c757d;
         }
@@ -104,8 +104,16 @@
 
     <!-- Page View Section -->
     <div class="page-view">
-        <img src="images/iphone.png" alt="KSO VPN App Left">
-        <img src="images/iphone.png" alt="KSO VPN App Right">
+        <div class="iphone-container">
+            <!-- First iPhone Image with App Name -->
+            <img src="images/iphone.png" alt="KSO VPN App Left">
+            <h1>KSO VPN</h1>
+        </div>
+        <div class="iphone-container">
+            <!-- Second iPhone Image with App Name -->
+            <img src="images/iphone.png" alt="KSO VPN App Right">
+            <h1>KSO VPN</h1>
+        </div>
     </div>
 
     <!-- Download Section -->
