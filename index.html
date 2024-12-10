@@ -23,6 +23,15 @@
             padding: 20px;
             background-color: white;
             color: black;
+            display: flex;
+            align-items: center; /* Align content vertically */
+            justify-content: center; /* Align content horizontally */
+            gap: 20px; /* Add space between icon and text */
+        }
+
+        .header img.icon {
+            width: 100px;
+            height: 100px;
         }
 
         .header h1 {
@@ -82,8 +91,12 @@
 <body>
     <!-- Header Section -->
     <div class="header">
-        <h1>KSO VPN</h1>
-        <p>Vip Vpn App</p>
+        <!-- Icon Image -->
+        <img class="icon" src="images/icon.png" alt="App Icon">
+        <div>
+            <h1>KSO VPN</h1>
+            <p>Vip VPN App</p>
+        </div>
     </div>
 
     <!-- Page View Section -->
