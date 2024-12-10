@@ -19,7 +19,9 @@
 
         /* Header section */
         .header {
-            text-align: center;
+            display: flex;
+            justify-content: top;
+            align-items: top;
             padding: 20px;
             background-color: white;
             color: black;
@@ -28,24 +30,30 @@
         .header img.icon {
             width: 100px;
             height: 100px;
+            margin-right: 20px; /* Space between icon and text */
+        }
+
+        .header .text {
+            text-align: left;
         }
 
         .header h1 {
             font-size: 30px;
-            margin: 10px 0 5px;
+            margin: 0;
         }
 
         .header p {
             font-size: 20px;
-            margin: 0;
+            margin: 10px 0;
         }
 
         /* Page View Section */
         .page-view {
             display: flex;
-            justify-content: center;
-            gap: 20px;
+            justify-content: space-around;
+            align-items: top;
             padding: 20px;
+            margin-top: 0px; /* Add space on top */
         }
 
         .page-view img {
@@ -55,12 +63,16 @@
 
         /* Download Section */
         .download-section {
-            text-align: center;
+            display: flex;
+            justify-content: center; /* Center the download section */
+            align-items: center;
             padding: 20px;
+            margin-top: 0px;
         }
 
         .download-section h2 {
             font-size: 24px;
+            margin-right: 20px; /* Add space between text and image */
             color: green;
         }
 
@@ -73,7 +85,7 @@
         .footer-section {
             text-align: center;
             margin-top: 0px;
-            padding: 10px;
+            padding: 10px 10px;
             background-color: #f8f9fa;
             color: #6c757d;
         }
@@ -82,9 +94,12 @@
 <body>
     <!-- Header Section -->
     <div class="header">
+        <!-- Icon Image -->
         <img class="icon" src="images/icon.png" alt="App Icon">
-        <h1>KSO VPN</h1>
-        <p>Vip VPN App</p>
+        <div class="text">
+            <h1>KSO VPN</h1>
+            <p>Vip VPN App</p>
+        </div>
     </div>
 
     <!-- Page View Section -->
