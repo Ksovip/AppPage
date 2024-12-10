@@ -20,7 +20,7 @@
         /* Header section */
         .header {
             text-align: center;
-            padding: 20px 20px;
+            padding: 20px;
             background-color: white;
             color: black;
         }
@@ -38,33 +38,33 @@
         /* Page View Section */
         .page-view {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-between;  /* Spread out the images to the left and right */
             align-items: center;
             padding: 20px;
+            margin-top: 40px;  /* Add space on top */
         }
 
         .page-view img {
-            width: 200px; /* အရွယ်အစား */
+            width: 200px;  /* Set a fixed width for the images */
             height: auto;
         }
 
-        /* Download Buttons */
-        .button {
+        /* Download Section */
+        .download-section {
             display: flex;
-            justify-content: flex-end; /* Right alignment */
+            justify-content: flex-end; /* Align elements to the right */
             align-items: center;
-            margin-top: 20px;
-            padding-right: 20px; /* Space from right edge */
+            padding: 20px;
+            margin-top: 40px; /* Add margin-top for spacing */
         }
 
-        .button h2 {
+        .download-section h2 {
             font-size: 24px;
-            margin-bottom: 20px;
+            margin-right: 20px; /* Add some space between text and image */
             color: green;
         }
 
-        .button a img {
-            margin: 10px;
+        .download-section a img {
             width: 150px;
             height: auto;
         }
@@ -92,8 +92,8 @@
         <img src="images/iphone.png" alt="KSO VPN App Right">
     </div>
 
-    <!-- Download Buttons -->
-    <div class="button">
+    <!-- Download Section -->
+    <div class="download-section">
         <h2>Download Now!</h2>
         <a href="nemusic_v1.5.apk">
             <img src="images/၂၀၂၄၁၂၀၉_၁၄၃၂၂၅.png" alt="Download APK">
