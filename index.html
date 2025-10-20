@@ -1,98 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="my">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KsoVIP VPN</title>
-    <link rel="shortcut icon" href="images/icon.png">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
-    <style>
-        /* Body style */
-        body {
-            margin: 0;
-            font-family: 'Open Sans', sans-serif;
-            background-color: white; /* Background အဖြူ */
-            color: black; /* စာသားအနက် */
-        }
-
-        /* Header section */
-        .header {
-            text-align: center;
-            padding: 20px 20px;
-            background-color: white; /* Background အဖြူ */
-            color: black; /* စာသားအနက် */
-        }
-
-        .header img {
-            width: 60px; /* ပုံအရွယ်အစား */
-            height: auto;
-            margin-bottom: 10px;
-            margin-top: 0; /* ပုံကို အပေါ်ဘက် ထားသည် */
-        }
-
-        .header h1 {
-            font-size: 48px;
-            margin: 0;
-            background-color: #f8f9fa;
-            color: #6c757d;
-        }
-
-        .header p {
-            font-size: 20px;
-            margin: 10px 0 10px;
-        }
-
-        /* Download buttons */
-        .button {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .button h2 {
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: green; /* Download Now! စာလုံးအစိမ်း */
-        }
-
-        .button a img {
-            margin: 10px;
-            width: 150px;
-            height: auto;
-        }
-
-        /* Footer */
-        .footer-section {
-            text-align: center;
-            margin-top: 50px;
-            padding: 20px 10px;
-            background-color: #f8f9fa;
-            color: #6c757d;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KSO VPN Panel</title>
+  <style>
+    body {
+      font-family: "Noto Sans Myanmar", sans-serif;
+      text-align: center;
+      background: #f9fafb;
+      color: #222;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #d33;
+      font-size: 28px;
+      margin-top: 30px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 400px;
+    }
+    .server {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .status {
+      font-size: 18px;
+      margin-top: 8px;
+    }
+    .online {
+      color: green;
+      font-weight: bold;
+    }
+    .offline {
+      color: red;
+      font-weight: bold;
+    }
+    ul {
+      text-align: left;
+      list-style: none;
+      padding-left: 0;
+      font-size: 16px;
+    }
+    li {
+      padding: 6px 0;
+      border-bottom: 1px solid #eee;
+    }
+    footer {
+      font-size: 14px;
+      margin-top: 40px;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <div class="header">
-       <img src="images/icon.png" alt="KsoVIP VPN App">
-        <h1>မင်္ဂလာပါဗျ</h1>
-        <p>ZIVPN App နဲ့ DTAC Jaidee တွဲသုံးခြင်း</p>
-        <p>1month 1device - 50ဘတ်✅</p>
-        <p>♻️TH Server🇹🇭</p>
-        <p>အစမ်းသုံးကြည့်နိုင်ပါတယ်</p>
-        <p>မိမိနဲ့ အဆင်ပြေမှ ဝယ်ယူပါ</p>
-    </div>
-    <!-- Download Buttons -->
-    <div class="button">
-        <a href="https://m.me/kyawsoe.oo.1292019">
-            <img src="images/icon1.png" alt="Download APK">
-        </a>
-    </div>
 
-    <!-- Footer Section -->
-    <div class="footer-section">
-        <p>Copyright © 2024 KSO VIP</p>
-    </div>
+  <h1>KSO VIP VPN Server Panel</h1>
+
+  <div class="card">
+    <p class="server">🇹🇭 TH Server #1</p>
+    <p class="status online">🟢 Online</p>
+    <p>Ping: 38ms</p>
+  </div>
+
+  <div class="card">
+    <p class="server">🇸🇬 SG Server #2</p>
+    <p class="status offline">🔴 Offline</p>
+    <p>Ping: —</p>
+  </div>
+
+  <div class="card">
+    <h3>👥 Active Users</h3>
+    <ul>
+      <li>kso001 — expire 2025-10-31 ✅</li>
+      <li>kso002 — expire 2025-11-10 ✅</li>
+      <li>kso003 — expire 2025-10-20 ⚠️</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>© 2025 KSO VIP | All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
